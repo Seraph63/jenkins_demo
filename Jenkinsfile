@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/Seraph63/jenkins_demo.git'
+        git(url: 'https://github.com/Seraph63/jenkins_demo.git', branch: 'master-dev')
       }
     }
 
