@@ -9,7 +9,6 @@ pipeline {
 
     stage('Test') {
       parallel {
-
         stage('PHP 7.3') {
           agent {
             docker {
