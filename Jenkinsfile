@@ -9,18 +9,7 @@ pipeline {
 
     stage('Test') {
       parallel {
-
-        stage('PHP 5.6') {
-          agent {
-            docker {
-              image 'allebb/phptestrunner-56:latest'
-              args '-u root:sudo'
-            }
-
-          }
-
-        }
-
+        
         stage('PHP 7.3') {
           agent {
             docker {
